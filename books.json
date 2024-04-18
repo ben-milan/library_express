@@ -1,0 +1,129 @@
+[
+    {
+      "isbn": "9780061120084",
+      "title": "To Kill a Mockingbird",
+      "year": 1960,
+      "author": "Harper Lee"
+    },
+    {
+      "isbn": "9780141439846",
+      "title": "Pride and Prejudice",
+      "year": 1813,
+      "author": "Jane Austen"
+    },
+    {
+      "isbn": "9780140187398",
+      "title": "1984",
+      "year": 1949,
+      "author": "George Orwell"
+    },
+    {
+      "isbn": "9781400079987",
+      "title": "The Kite Runner",
+      "year": 2003,
+      "author": "Khaled Hosseini"
+    },
+    {
+      "isbn": "9780743273565",
+      "title": "The Great Gatsby",
+      "year": 1925,
+      "author": "F. Scott Fitzgerald"
+    },
+    {
+      "isbn": "9780316769488",
+      "title": "The Catcher in the Rye",
+      "year": 1951,
+      "author": "J.D. Salinger"
+    },
+    {
+      "isbn": "9780064400558",
+      "title": "Matilda",
+      "year": 1988,
+      "author": "Roald Dahl"
+    },
+    {
+      "isbn": "9780451524935",
+      "title": "Frankenstein",
+      "year": 1818,
+      "author": "Mary Shelley"
+    },
+    {
+      "isbn": "9780141439587",
+      "title": "Jane Eyre",
+      "year": 1847,
+      "author": "Charlotte Brontë"
+    },
+    {
+      "isbn": "9780316015844",
+      "title": "The Alchemist",
+      "year": 1988,
+      "author": "Paulo Coelho"
+    },
+    {
+      "isbn": "9780679723165",
+      "title": "Beloved",
+      "year": 1987,
+      "author": "Toni Morrison"
+    },
+    {
+      "isbn": "9780062315007",
+      "title": "Gone Girl",
+      "year": 2012,
+      "author": "Gillian Flynn"
+    },
+    {
+      "isbn": "9780307352149",
+      "title": "Life of Pi",
+      "year": 2001,
+      "author": "Yann Martel"
+    },
+    {
+      "isbn": "9780345803508",
+      "title": "The Hunger Games",
+      "year": 2008,
+      "author": "Suzanne Collins"
+    },
+    {
+      "isbn": "9780451527745",
+      "title": "Brave New World",
+      "year": 1932,
+      "author": "Aldous Huxley"
+    },
+    {
+      "isbn": "9780141182605",
+      "title": "One Hundred Years of Solitude",
+      "year": 1967,
+      "author": "Gabriel García Márquez"
+    },
+    {
+      "isbn": "9780380002935",
+      "title": "The Outsiders",
+      "year": 1967,
+      "author": "S.E. Hinton"
+    },
+    {
+      "isbn": "9780345477253",
+      "title": "The Da Vinci Code",
+      "year": 2003,
+      "author": "Dan Brown"
+    },
+    {
+      "isbn": "9780061122415",
+      "title": "The Road",
+      "year": 2006,
+      "author": "Cormac McCarthy"
+    },
+    {
+      "isbn": "9780062024039",
+      "title": "Divergent",
+      "year": 2011,
+      "author": "Veronica Roth"
+    },
+    {
+      "isbn": "9781400078775",
+      "title": "The Help",
+      "year": 2009,
+      "author": "Kathryn Stockett"
+    }
+  ]
+  
