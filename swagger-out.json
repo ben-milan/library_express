@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Library v2.0",
-    "description": "Bookmanagement",
+    "description": "Book management system",
     "version": "1.0.0"
   },
   "host": "http://localhost:3000",
@@ -10,10 +10,26 @@
   "schemes": [
     "http"
   ],
+  "tags": [
+    {
+      "name": "book",
+      "description": "Operations related to books"
+    },
+    {
+      "name": "lend",
+      "description": "Operations related to lending books"
+    },
+    {
+      "name": "login",
+      "description": "Operations related to user login"
+    }
+  ],
   "paths": {
     "/books": {
       "get": {
-        "description": "",
+        "tags": ["book"],
+        "summary": "Get all books",
+        "description": "Returns a list of all books.",
         "responses": {
           "200": {
             "description": "OK"
@@ -21,7 +37,9 @@
         }
       },
       "post": {
-        "description": "",
+        "tags": ["book"],
+        "summary": "Add a new book",
+        "description": "Adds a new book to the library.",
         "parameters": [
           {
             "name": "body",
@@ -48,7 +66,9 @@
     },
     "/books/{isbn}": {
       "get": {
-        "description": "",
+        "tags": ["book"],
+        "summary": "Get book by ISBN",
+        "description": "Returns details of a book based on its ISBN.",
         "parameters": [
           {
             "name": "isbn",
@@ -67,7 +87,9 @@
         }
       },
       "put": {
-        "description": "",
+        "tags": ["book"],
+        "summary": "Update book by ISBN",
+        "description": "Updates details of a book based on its ISBN.",
         "parameters": [
           {
             "name": "isbn",
@@ -110,7 +132,9 @@
         }
       },
       "delete": {
-        "description": "",
+        "tags": ["book"],
+        "summary": "Delete book by ISBN",
+        "description": "Deletes a book from the library based on its ISBN.",
         "parameters": [
           {
             "name": "isbn",
@@ -129,7 +153,9 @@
         }
       },
       "patch": {
-        "description": "",
+        "tags": ["book"],
+        "summary": "Update book partially by ISBN",
+        "description": "Partially updates details of a book based on its ISBN.",
         "parameters": [
           {
             "name": "isbn",
@@ -162,7 +188,9 @@
     },
     "/lends": {
       "get": {
-        "description": "",
+        "tags": ["lend"],
+        "summary": "Get all lend transactions",
+        "description": "Returns a list of all lending transactions.",
         "responses": {
           "200": {
             "description": "OK"
@@ -170,7 +198,9 @@
         }
       },
       "post": {
-        "description": "",
+        "tags": ["lend"],
+        "summary": "Lend a book to a customer",
+        "description": "Lends a book to a customer and records the transaction.",
         "parameters": [
           {
             "name": "body",
@@ -206,7 +236,9 @@
     },
     "/lends/{id}": {
       "get": {
-        "description": "",
+        "tags": ["lend"],
+        "summary": "Get lend transaction by ID",
+        "description": "Returns details of a lending transaction based on its ID.",
         "parameters": [
           {
             "name": "id",
@@ -225,7 +257,9 @@
         }
       },
       "delete": {
-        "description": "",
+        "tags": ["lend"],
+        "summary": "Delete lend transaction by ID",
+        "description": "Deletes a lending transaction based on its ID.",
         "parameters": [
           {
             "name": "id",
@@ -246,7 +280,9 @@
     },
     "/login": {
       "post": {
-        "description": "",
+        "tags": ["login"],
+        "summary": "Login with email and password",
+        "description": "Authenticates a user with their email and password.",
         "parameters": [
           {
             "name": "email",
@@ -271,7 +307,9 @@
     },
     "/verify": {
       "get": {
-        "description": "",
+        "tags": ["login"],
+        "summary": "Verify authentication",
+        "description": "Verifies the authentication status of the user.",
         "responses": {
           "200": {
             "description": "OK"
@@ -284,7 +322,9 @@
     },
     "/logout": {
       "delete": {
-        "description": "",
+        "tags": ["login"],
+        "summary": "Logout",
+        "description": "Logs out the currently authenticated user.",
         "responses": {
           "204": {
             "description": "No Content"

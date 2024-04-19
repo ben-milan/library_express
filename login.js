@@ -18,7 +18,8 @@ router.post('/login', (req, res) => {
 
   if (String(email.toLowerCase()) === String(testCredentials.email) && pwd === testCredentials.password) {
     req.session.auth = 'authentifiziert'
-    req.session.logIn = [{ email, pwd }]
+    req.session.email = email
+    req.session.pwd  = pwd
     res.status(200).send(req.session.auth)
   } else {
     res.sendStatus(403)
@@ -27,17 +28,17 @@ router.post('/login', (req, res) => {
 
 router.get('/verify', (req, res) => {
   if (String(req.session.auth) === 'authentifiziert') {
-    res.status(200).send(req.session.logIn[0].email)
+    res.status(200).send(req.session.email)
   } else {
     res.sendStatus(401)
   }
 })
 
 router.delete("/logout", (req, res) => {
-    if (req.session.logIn && req.session.logIn[0]) {
+    if (req.session.email) {
         req.session.auth = "nicht authentifiziert"
-        req.session.logIn[0].email = null
-        req.session.logIn[0].pwd = null
+        req.session.email = null
+        req.session.pwd = null
         res.sendStatus(204)
     } else {
         res.sendStatus(401)
